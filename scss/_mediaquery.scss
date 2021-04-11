@@ -1,0 +1,303 @@
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1119.98px) {
+  .container {
+    padding: 60px 30px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hero .wrapper {
+    justify-content: space-between;
+    .left-side {
+      width: 40%;
+    }
+    .right-side {
+      width: 60%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .showcase {
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+    }
+
+    .images {
+      justify-content: center;
+      flex-wrap: wrap;
+
+      img {
+        margin-right: 20px;
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .consult .wrapper {
+    .big-img {
+      margin-right: 40px;
+    }
+
+    .content .cont-a {
+      img {
+        margin-right: 20px;
+      }
+    }
+    .btn {
+      margin-left: 60px;
+    }
+  }
+
+  .building .wrapper {
+    img {
+      margin-right: 30px;
+    }
+
+    .text h2 {
+      margin-bottom: 60px;
+    }
+  }
+}
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .consult {
+    .wrapper {
+      justify-content: space-between;
+
+      .big-img {
+        align-self: flex-start;
+        width: 50%;
+        margin-right: 0px;
+        order: 2 !important;
+      }
+
+      .content {
+        width: 50%;
+        order: 1;
+        margin-right: 20px;
+
+        .cont-a {
+          &:nth-child(3) {
+            margin-bottom: 40px;
+          }
+        }
+      }
+
+      .btn {
+        margin-left: 0px !important;
+      }
+    }
+  }
+
+  .building .wrapper img {
+    margin-right: 0;
+    width: 50%;
+  }
+
+  .partners {
+    h2 {
+      text-align: center;
+    }
+
+    .images {
+      justify-content: center;
+      img {
+        margin-right: 40px;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .hero {
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+    .wrapper {
+      flex-direction: column;
+
+      .left-side {
+        width: 80%;
+        margin-bottom: 60px;
+      }
+
+      .right-side {
+        width: 100%;
+      }
+    }
+  }
+
+  .consult {
+    .wrapper {
+      flex-direction: column;
+
+      .content {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 60px;
+      }
+
+      .big-img {
+        width: 100%;
+      }
+    }
+  }
+
+  .testimonial {
+    img {
+      width: 6%;
+    }
+
+    .comment p {
+      font-size: 1.4rem !important;
+    }
+  }
+
+  .building {
+    .wrapper {
+      flex-direction: column;
+
+      img {
+        order: 2;
+      }
+
+      .text {
+        order: 1;
+        margin-bottom: 60px;
+        text-align: center;
+        h2 {
+          br {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    padding: 0;
+    .wrapper {
+      flex-direction: column;
+      justify-content: center;
+
+      ul li {
+        display: block;
+        line-height: 2.2;
+        text-align: center;
+      }
+
+      a {
+        margin: auto;
+        margin-top: 30px;
+        img {
+          width: 80px;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .container {
+    padding: 30px 30px;
+  }
+  .btn {
+    padding: 16px 20px;
+  }
+
+  h2 {
+    font-size: 2.4rem !important;
+  }
+
+  header {
+    nav {
+      ul li {
+        display: inline;
+        margin-left: 10px;
+
+        a.btn {
+          padding: 10px 20px !important;
+        }
+
+        &:first-child {
+          display: none;
+        }
+
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  h1 {
+    font-size: 2.8rem !important;
+  }
+
+  .hero {
+    text-align: center;
+
+    .wrapper {
+      .left-side {
+        width: 100%;
+        margin-bottom: 60px;
+
+        p {
+          padding-right: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .showcase {
+    .images {
+      img {
+        margin-right: 0px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .consult .wrapper .content {
+    width: 100%;
+  }
+
+  .testimonial {
+    .wrapper {
+      img {
+        margin-right: 10px;
+      }
+      .comment {
+        p {
+          font-size: 1.1rem !important;
+        }
+        h3 {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

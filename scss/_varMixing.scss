@@ -1,0 +1,47 @@
+// variables
+$heading: "Playfair Display", serif;
+$font: "Poppins", sans-serif;
+
+// color varables text
+$dark: #000;
+$light: #fff;
+
+// primary color
+$orange: #fd665e;
+$btn-hover: rgb(255, 61, 51);
+
+// secondary
+$gray: #585858;
+$soft-gray: #e2e2e2;
+$wood: #473534;
+$soft-light: #f9f9f9;
+
+// code same for all
+.container {
+  max-width: 1110px;
+  margin: auto;
+  padding: 60px 0;
+}
+
+.btn {
+  background: $orange;
+  padding: 20px 30px;
+  border-radius: 6px;
+  font-weight: 600;
+  color: $light;
+
+  &:hover {
+    background: $btn-hover;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+li a {
+  &:hover {
+    color: $btn-hover;
+  }
+}
